@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@200;500&display=swap");
+
+$darkGrey: hsl(0, 0%, 26%);
+$darkBlue: hsl(223, 31%, 33%);
+$lightGrey: hsl(0, 0%, 91%);
+
+html {
+  font-size: 62.5%;
+}
+
+.cls-1 {
+  fill: #fff;
+}
+
+.cls-2 {
+  fill: #3d496e;
+}
+
+.nav-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+
+.nav-desktop {
+  display: flex;
+  // background-color: $darkBlue;
+  background-color: $darkBlue;
+  color: $lightGrey;
+  font-size: clamp(22px, 1.25vw, 10rem);
+  align-items: center;
+
+  box-shadow: 8px 14px clamp(5px, 0.4vw, 2rem) #000000;
+
+  height: clamp(11vh, 10vh, 10vh);
+  font-family: "Teko", sans-serif;
+  letter-spacing: 2px;
+}
+
+.nav-desktop-link {
+  color: inherit;
+  text-decoration: none;
+  color: #d9ecff;
+}
+
+.nav-desktop-logo {
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+  height: clamp(30px, 2.9vh, 240px);
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-desktop-logo {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .nav-desktop-logo {
+    margin-right: auto;
+  }
+}
+
+.nav-desktop-info {
+  margin-left: 15%;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-desktop-info {
+    display: none;
+  }
+}
+
+.nav-desktop-info-about,
+.nav-desktop-info-gallery {
+  margin-right: 30%;
+}
+
+.nav-desktop-log-in {
+  font-size: clamp(20px, 1.25vw, 10rem);
+  border: 1px solid white;
+  padding: 2.5px clamp(25px, 1.6vw, 130px);
+  border-radius: clamp(6px, 0.2vw, 8rem);
+  margin-left: auto;
+  margin-right: 15px;
+
+  // background-color: rgba(165, 217, 252, 0.836);
+  color: #d9ecff;
+}
+
+@media screen and (min-width: 1000px) {
+  .nav-desktop-log-in {
+    margin-right: 5%;
+  }
+}
+
+.nav-desktop-log-in {
+  @media screen and (max-width: 414px) {
+    display: none;
+  }
+}
+
+.nav-desktop-hamburger {
+  align-items: center;
+  margin-right: 2%;
+}
+
+@media screen and (min-width: 1000px) {
+  .nav-desktop-hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-desktop-hamburger {
+    margin-right: 15px;
+  }
+}
+
+.nav-desktop-hamburger .svg-hamburger-1 {
+  display: flex;
+  transform-origin: center;
+  transform-box: fill-box;
+  height: 80px;
+}
+
+////
+
+.svg-hamburger-1 {
+  cursor: pointer;
+}
+
+/*svg style for the hero presentation*/
+
+/*svg-hamburger-1*/
+
+.hamburger-menu {
+}
+
+.test {
+  display: block;
+  margin-right: 3%;
+}
+
+.svg-hamburger-1 {
+  transform-origin: center;
+  transform-box: fill-box;
+  width: 100%;
+  height: 80px;
+}
+
+@media screen and (min-width: 1000px) {
+  .svg-hamburger-1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hamburger-menu {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-desktop-about-contact-gallery {
+    display: none;
+    flex-basis: 0;
+  }
+}
+
+.svg-hamburger-1-path-1 {
+  stroke-dasharray: 40;
+  stroke-dashoffset: -15;
+}
+.svg-hamburger-1-path-2 {
+  stroke-dasharray: 40;
+  stroke-dashoffset: 15;
+}
+
+.svg-hamburger-1-path-1-and-circle-1 {
+  transform-origin: right;
+  transform-box: fill-box;
+  animation: rotatePathOneAndCircleOne 0.3s forwards;
+}
+@keyframes rotatePathOneAndCircleOne {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
+.svg-hamburger-1-path-3-and-circle-3 {
+  transform-origin: right;
+  transform-box: fill-box;
+  animation: rotatePathThreeAndCircleThree 0.6s forwards;
+}
+@keyframes rotatePathThreeAndCircleThree {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(-360deg);
+  }
+}

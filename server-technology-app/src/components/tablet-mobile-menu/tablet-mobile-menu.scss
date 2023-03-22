@@ -1,0 +1,212 @@
+.tablet-mobile-menu-wrapper {
+  height: 100vh;
+  width: 50%;
+  background-color: #08162b;
+  opacity: 0.95;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: all 0.7s ease-out;
+}
+
+@media screen and (max-width: 280px) {
+  .tablet-mobile-menu {
+    width: 100%;
+  }
+}
+
+.blurred-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  opacity: 0.7;
+  z-index: 5;
+}
+
+/*exit-icon*/
+
+.tablet-mobile-menu-exit-wrapper,
+.tablet-mobile-menu-exit {
+  width: 33px;
+  height: 33px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 15px;
+}
+
+.exit-icon {
+  cursor: pointer;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.exit-icon-path-1 {
+  stroke-dasharray: 40;
+  stroke-dashoffset: -15;
+  animation: exitIconBackToInitialOffset 0.1s 1.5s forwards;
+}
+
+@keyframes exitIconBackToInitialOffset {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.exit-icon-path-2 {
+  stroke-dasharray: 40;
+  stroke-dashoffset: 15;
+}
+.exit-icon-path-3 {
+  stroke-dasharray: 40;
+  stroke-dashoffset: 0;
+}
+
+.exit-icon-path-1-and-circle-1 {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: ExitIconPositionPathOneAndCircleOne 0.8s 0.5s forwards;
+}
+
+@keyframes ExitIconPositionPathOneAndCircleOne {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(16px);
+  }
+}
+
+.exit-icon-path-2-and-circle-2 {
+  animation: exitIconUnvisiblePathThwoAndCircleThwo 0.4s 2.5s forwards;
+}
+
+@keyframes exitIconUnvisiblePathThwoAndCircleThwo {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.exit-icon-path-3-and-circle-3 {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: exitIconPositionPathThreeAndCircleThree 0.8s 0.5s forwards;
+}
+
+@keyframes exitIconPositionPathThreeAndCircleThree {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-16px);
+  }
+}
+
+.exit-icon-components {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: exitIconRotateComponents 0.8s 1s forwards;
+}
+
+@keyframes exitIconRotateComponents {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+.exit-icon-path-1-and-circle-1-wrappper {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: exitIconRotatePathOneAndCircleOneWrapper 1s 3s forwards;
+}
+@keyframes exitIconRotatePathOneAndCircleOneWrapper {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(45deg);
+  }
+}
+
+.exit-icon-path-3-and-circle-3-wrappper {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: exitIconRotatePathThreeAndCircleThreeWrapper 1s 3s forwards;
+}
+@keyframes exitIconRotatePathThreeAndCircleThreeWrapper {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(-45deg);
+  }
+}
+.exit-icon-circle-1 {
+  animation: exitIconUnvisibleCircleOne 0.4s 2.5s forwards;
+}
+
+@keyframes exitIconUnvisibleCircleOne {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.exit-icon-circle-3 {
+  animation: exitIconUnvisibleCircleThree 0.4s 2.5s forwards;
+}
+
+@keyframes exitIconUnvisibleCircleThree {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.tablet-mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tablet-mobile-menu-lines {
+  width: 100% !important;
+  opacity: 0.25;
+}
+
+.tablet-mobile-menu-line-1 {
+  margin: 0 auto;
+}
+
+.tablet-mobile-menu-about-contact-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.tablet-mobile-menu-about-contact-gallery .link {
+  text-decoration: none;
+  color: white;
+}
+
+.tablet-mobile-menu-about,
+.tablet-mobile-menu-contact {
+  margin-bottom: 20px;
+}
+
+.tablet-mobile-menu-log-in {
+  margin-top: 20px;
+  color: white;
+  text-decoration: none;
+}

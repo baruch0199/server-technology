@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100vh;
+  width: 100% !important;
+}
+
+@import "./components/desktop-menu/desktop-menu.scss";
+@import "./components/copy-right/copy-right.scss";
+@import "./components/tablet-mobile-menu/tablet-mobile-menu.scss";
+@import "./components/hero/hero.scss";

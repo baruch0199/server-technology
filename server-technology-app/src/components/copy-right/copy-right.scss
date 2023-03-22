@@ -1,0 +1,33 @@
+.copy-right {
+  position: absolute;
+  bottom: clamp(9px, 1.6vh, 5rem);
+  left: 6%;
+  font-size: clamp(9px, 0.6vw, 8rem);
+}
+
+.copy-right a {
+  text-decoration: none;
+  color: $darkBlue;
+}
+
+.isometric-link:hover {
+  color: #5971b8;
+}
+
+.teko-font-link:hover {
+  color: #5971b8;
+}
+
+@media screen and (max-width: 800px) {
+  .copy-right {
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .copy-right {
+    font-size: 7px;
+  }
+}
